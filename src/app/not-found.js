@@ -1,4 +1,5 @@
 "use client"
+import React from "react";
 
 import { FileSearch } from "@phosphor-icons/react/dist/ssr";
 
