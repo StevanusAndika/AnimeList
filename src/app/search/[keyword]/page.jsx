@@ -2,13 +2,14 @@ import AnimeList from "@/components/AnimeList";
 import Link from "next/link";
 import Header from "@/components/AnimeList/Header";
 import '@/app/globals.css';
+import { getAnimeResponse } from "@/app/libs/api-libs";
 const Page = async ({params}) => {
 const{keyword} = params;
 const decodedKeyword = decodeURI(keyword);
 
   // Mengambil data anime dari API
-  const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/anime?q=${decodedKeyword}`);
-  const searchAnime = await response.json();
+  const searchAnime = await getAnimeResponse("anime", `q=${decodedKeyword}`);
+  
   
   
   // Mencetak data anime ke konsol (opsional)

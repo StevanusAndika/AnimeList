@@ -2,12 +2,11 @@ import AnimeList from "@/components/AnimeList";
 import Link from "next/link";
 import Header from "@/components/AnimeList/Header";
 import '@/app/globals.css';
+import { getAnimeResponse } from "./libs/api-libs";
 
 const Page = async () => {
   // Mengambil data anime dari API
-  const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/top/anime?limit=8`);
-  const topAnime = await response.json();
-  
+  const topAnime = await getAnimeResponse("top/anime","limit=8");
   
   // Mencetak data anime ke konsol (opsional)
   
