@@ -25,10 +25,10 @@ const InputSearch = () => {
 
   // Render komponen InputSearch
   return (
-    <div className="relative">
+    <div className="relative text-base font-light">
       {/* Input untuk melakukan pencarian, nilai input akan disimpan menggunakan useRef */}
       <input
-        placeholder="Search Anime in here..."
+        placeholder="Search anime in here "
         className="w-full p-2 rounded"
         ref={searchRef}
         style={{ color: 'black' }}
