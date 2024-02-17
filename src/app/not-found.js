@@ -3,6 +3,8 @@ import '@/app/globals.css';
 import Link from 'next/link';
 
 import { FileSearch } from "@phosphor-icons/react/dist/ssr";
+import { Rewind } from '@phosphor-icons/react';
+
 
 
 
@@ -12,7 +14,8 @@ const Page = () => {
         <div className="flex justify-center items-center gap-4 flex-col">
           <FileSearch size={32}className="text-color-accent"/>
           <h3 className="text-4xl font-bold text-color-primary">404 | Not Found</h3>
-          <Link href="/"className="text-color-primary hover:text-color-accent transition-all">Kembali</Link>
+          <Link href="/"className="text-color-primary hover:text-color-accent transition-all">
+          <Rewind size={32} />Back</Link>
           
 
         </div>
