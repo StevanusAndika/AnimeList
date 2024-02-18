@@ -6,7 +6,7 @@ const gabarito = Gabarito({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Anime list',
-  description: 'Website Anime Indonesia',
+  description: 'Website Anime List Indonesia',
 }
 
 export default function RootLayout({ children }) {

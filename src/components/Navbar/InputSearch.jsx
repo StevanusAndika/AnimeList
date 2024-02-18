@@ -30,15 +30,15 @@ const InputSearch = () => {
     <div className="relative text-base font-light">
       {/* Input untuk melakukan pencarian, nilai input akan disimpan menggunakan useRef */}
       <input
-        placeholder="Search anime in here " name="fom"
-        className="w-full p-2 rounded"
+        placeholder="Search anime in here " name="form"
+        className="w-full p-2 rounded  "
         ref={searchRef}
         style={{ color: 'black' }}
         onKeyPress={handleKeyPress} // Menambahkan event listener untuk tombol key press
       />
 
       {/* Tombol pencarian dengan ikon kaca pembesar, ketika ditekan akan memanggil fungsi handleSearch */}
-      <button className="absolute top-2 right-2" onClick={handleSearch}>
+      <button className="absolute top-2 right-2 " onClick={handleSearch}>
         <MagnifyingGlass size={25} style={{ color: 'black' }} />
       </button>
     </div>
