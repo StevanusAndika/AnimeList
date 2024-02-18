@@ -2,7 +2,7 @@ import AnimeList from "@/components/AnimeList";
 import Link from "next/link";
 import Header from "@/components/AnimeList/Header";
 import '@/app/globals.css';
-import { getAnimeResponse } from "@/app/libs/api-libs";
+import { getAnimeResponse } from "@/libs/api-libs";
 const Page = async ({params}) => {
 const{keyword} = params;
 const decodedKeyword = decodeURI(keyword);

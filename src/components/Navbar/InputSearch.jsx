@@ -12,7 +12,7 @@ const InputSearch = () => {
   // Fungsi handleSearch akan dipanggil saat tombol pencarian ditekan
   const handleSearch = (event) => {
     const keyword = searchRef.current.value; // Mendapatkan nilai input dari referensi
-    if(!keyword) return
+    if(!keyword ||keyword.trim()=="") return
     event.preventDefault(); // Mencegah aksi default dari form (submit)
   
     router.push(`/search/${keyword}`); // Melakukan navigasi ke halaman pencarian dengan kata kunci yang dimasukkan
