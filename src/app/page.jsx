@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "@/components/AnimeList/Header";
 import '@/app/globals.css';
 import { getAnimeResponse, getNestedAnimeResponse, reproduce } from "@/libs/api-libs";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const Page = async () => {
   // Mengambil data anime dari API
