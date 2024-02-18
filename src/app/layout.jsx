@@ -1,6 +1,8 @@
 import Navbar from '@/components/Navbar'
 
 import { Gabarito } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react';
+
 
 const gabarito = Gabarito({ subsets: ['latin'] })
 
@@ -14,6 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${gabarito.className} bg-color-dark`} suppressHydrationWarning={true}>
         <Navbar />
+        <Analytics />
         {children}
       </body>
     </html>
