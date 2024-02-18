@@ -13,6 +13,7 @@ const Page = () => {
 
   const fetchData = async() => {
     const populerAnime = await getAnimeResponse("top/anime",`page=${page}`)
+    
     setTopAnime(populerAnime)
   }
 

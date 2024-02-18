@@ -38,14 +38,14 @@ const VideoPlayer = ({ youtubeId }) => {
         return (
             <button
                 onClick={handleVideoPlayer}
-                className="rounded fixed bottom-5 right-5 w-32 bg-color-primary text-color-dark text-xl text-bold text-underline hover:bg-color-accent transition-all shadow-xl"
+                className="rounded fixed bottom-5 right-5 w-32 bg-color-primary text-red-600 text-xl text-bold text-underline hover:bg-color-accent transition-all shadow-xl"
             >
                 Watch Trailer
             </button>
         )
     }
 
-    return isOpen ? <Player /> : <ButtonOpenTrailer/>
+    return isOpen ? <ButtonOpenTrailer/> : <Player /> 
 }
 
 export default VideoPlayer

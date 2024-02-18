@@ -8,7 +8,7 @@ import VideoPlayer from '@/components/Utilites/VideoPlayer';
 return(
     <>
     <div className="pt-4 px-4 ">
-    <h3 className="text-2xl text-color-primary">{anime.data.title} - {anime.data.year}</h3>
+    <h3 className="text-2xl text-color-primary">{anime.data.title} | {anime.data.year}</h3>
     </div>
 
     <div className="pt-4 px-4 flex gap-2 text-color-primary overflow-x-auto">
@@ -20,8 +20,8 @@ return(
         </div>
         <div className="w-36 flex flex-col justify-center items-center rounded border border-color-accent p-2">
             
-            <h3>Members</h3>
-            <p>{anime.data.members}</p>
+            <h3>Rate</h3>
+            <p>{anime.data.rating}</p>
         </div>
         <div className="w-36 flex flex-col justify-center items-center rounded border border-color-accent p-2">
             
@@ -45,6 +45,8 @@ return(
         </div>
 
         
+
+        
         
     </div>
     <div className="pt-4 px-4  flex sm:flex-nowrap flex-wrap gap-2 text-color-primary">
@@ -55,7 +57,7 @@ return(
                     height={250}
                     className="w-full rounded object-cover"
                 />
-                <p className="text-justify text-xl">{anime.data.synopsis}</p>
+                <p className="text-justify text-xl p-4">{anime.data.synopsis}</p>
                 <div>
                     <VideoPlayer youtubeId={anime.data.trailer.youtube_id}/>
                 </div>
