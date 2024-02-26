@@ -17,7 +17,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${gabarito.className} bg-color-dark`} suppressHydrationWarning={true}>
         <Navbar />
+        
         <Analytics />
+       
         {children}
       </body>
     </html>
