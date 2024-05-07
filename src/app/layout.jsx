@@ -10,10 +10,9 @@ const Layout = ({ children }) => {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5648536853192084"
           crossorigin="anonymous"
         ></script>
-        <meta name="google-adsense-account" content="ca-pub-5648536853192084" />
-  
+        {/* Tambahkan script lainnya di sini jika perlu */}
       </Head>
- 
+      {/* Konten lainnya */}
       {children}
     </div>
   );
