@@ -5,7 +5,6 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Head>
-        
         {/* Tambahkan tag meta lainnya di sini jika perlu */}
       </Head>
       {/* Konten lainnya */}
