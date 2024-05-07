@@ -5,6 +5,7 @@ import HeaderMenu from "@/components/Utilites/HeaderMenu";
 import AnimeList from "@/components/AnimeList";
 import Pagination from "@/components/Utilites/Pagination";
 import { getAnimeResponse } from "@/libs/api-libs";
+import Navbar from "@/components/Navbar";
 
 
 const Page = () => {
@@ -23,9 +24,12 @@ const Page = () => {
 
   return (
     <>
-    <HeaderMenu title={`Popular Anime  #${page}`}/>
+    <Navbar/>
+    <HeaderMenu title={`Popular Anime  #${page}`} className="text-color-dark text-bold" />
+
     <AnimeList api={topAnime}/>
-    <Pagination page={page}lastPage={topAnime.pagination?.last_visible_page}setPage={setPage}/>
+    <Pagination page={page} lastPage={topAnime.pagination?.last_visible_page} setPage={setPage} style={{ color: "black" }} />
+
     </>
   );
 };

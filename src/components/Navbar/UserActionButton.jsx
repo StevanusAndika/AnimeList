@@ -12,7 +12,7 @@ const UserActionButton = async() => {
             {
                 user ? <Link href="/users/dashboard" className="py-1 text-color-dark hover:text-color-primary">Dashboard</Link> : null
             }
-            <Link href={actionURL} className="bg-color-dark text-color-primary py-1 px-12 inline-block transform transition-transform hover:scale-110">{actionLabel}</Link>
+            <Link href={actionURL} className="bg-color-dark text-color-dark py-1 px-12 inline-block transform transition-transform hover:scale-110">{actionLabel}</Link>
         </div>
     )
 }

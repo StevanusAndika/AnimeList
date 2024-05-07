@@ -2,13 +2,15 @@ import '@/app/globals.css';
 import { getAnimeResponse } from "@/libs/api-libs";
 import Image from "next/image";
 import VideoPlayer from '@/components/Utilites/VideoPlayer';
+import Navbar from '@/components/Navbar';
     const Page = async ({params : { id }}) => {
     const anime =await getAnimeResponse(`anime/${id}`)
     
 return(
     <>
+    <Navbar/>
     <div className="pt-4 px-4 ">
-    <h3 className="text-2xl text-color-primary">{anime.data.title} - {anime.data.year}</h3>
+    <h3 className="text-2xl text-color-dark">{anime.data.title} - {anime.data.year}</h3>
     </div>
 
     <div className="pt-4 px-4 flex gap-2 text-color-primary overflow-x-auto">

@@ -4,6 +4,7 @@ import Header from "@/components/AnimeList/Header";
 import '@/app/globals.css';
 import { getAnimeResponse, getNestedAnimeResponse, reproduce } from "@/libs/api-libs";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Navbar from "@/components/Navbar";
 
 const Page = async () => {
   // Mengambil data anime dari API
@@ -20,6 +21,7 @@ const Page = async () => {
   
   return (
     <>
+    <Navbar/>
       <section>
         <Header title="Most Popular" linkTitle="See More" linkHref="/populer"/>
         <AnimeList api={topAnime} />
