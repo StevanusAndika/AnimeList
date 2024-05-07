@@ -1,27 +1,22 @@
-import Navbar from '@/components/Navbar'
+import React from 'react';
+import Head from 'next/head';
 
-import { Gabarito } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/react';
-
-
-const gabarito = Gabarito({ subsets: ['latin'] })
-
-export const metadata = {
-  title: 'Anime list',
-  description: 'Website Anime List Indonesia',
-  
-}
-
-export default function RootLayout({ children }) {
+const Layout = ({ children }) => {
   return (
-    <html lang="en">
-      <body className={`${gabarito.className} bg-color-dark`} suppressHydrationWarning={true}>
-        <Navbar />
-        
-        <Analytics />
-       
-        {children}
-      </body>
-    </html>
-  )
-}
+    <div>
+      <Head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5648536853192084"
+          crossorigin="anonymous"
+        ></script>
+        <meta name="google-adsense-account" content="ca-pub-5648536853192084" />
+  
+      </Head>
+ 
+      {children}
+    </div>
+  );
+};
+
+export default Layout;
