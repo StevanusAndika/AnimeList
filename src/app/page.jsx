@@ -8,9 +8,9 @@ import Navbar from "@/components/Navbar";
 
 const Page = async () => {
   // Mengambil data anime dari API
-  const topAnime = await getAnimeResponse("top/anime","limit=8");
+  const topAnime = await getAnimeResponse("top/anime","limit=12");
  let recommendedAnime = await getNestedAnimeResponse("recommendations/anime","entry")
-  recommendedAnime = reproduce(recommendedAnime,8)
+  recommendedAnime = reproduce(recommendedAnime,12)
 
   //console.log(recommendedAnime)
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:wght@100;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sora:wght@700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Bangers', sans-serif; /* 'Bangers' diikuti oleh fallback font jika perlu */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
     
    
 }
@@ -40,3 +43,24 @@ img:hover {
         transform: rotate(.5turn);
     }
 }
+
+
+
+/* styles/scrollbar.css */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #ffc639; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ddae38; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f5b001; 
+  }
+  

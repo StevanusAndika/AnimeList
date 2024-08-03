@@ -25,10 +25,14 @@ const Page = () => {
   return (
     <>
     <Navbar/>
-    <HeaderMenu title={`Popular Anime  #${page}`} className="text-dark" />
+   
+    <HeaderMenu title={`Popular Anime #${page}`}/>
+
+
 
     <AnimeList api={topAnime}/>
-    <Pagination page={page} lastPage={topAnime.pagination?.last_visible_page} setPage={setPage} style={{ color: "black" }} />
+    <Pagination page={page} lastPage={topAnime.pagination?.last_visible_page} setPage={setPage}/>
+    
 
     </>
   );

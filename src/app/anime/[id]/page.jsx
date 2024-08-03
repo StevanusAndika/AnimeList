@@ -13,7 +13,7 @@ return(
     <h3 className="text-2xl text-color-dark">{anime.data.title} - {anime.data.year}</h3>
     </div>
 
-    <div className="pt-4 px-4 flex gap-2 text-color-primary overflow-x-auto">
+    <div className="pt-4 px-4 flex gap-2 text-color-dark overflow-x-auto">
        
         <div className="w-36 flex flex-col justify-center items-center rounded border border-color-accent p-2">
             
@@ -57,7 +57,7 @@ return(
         
         
     </div>
-    <div className="pt-4 px-4  flex sm:flex-nowrap flex-wrap gap-2 text-color-primary">
+    <div className="pt-4 px-4  flex sm:flex-nowrap flex-wrap gap-2 text-color-dark">
     <Image
                     src={anime.data.images.webp.image_url}
                     alt={anime.data.images.jpg.image_url}
