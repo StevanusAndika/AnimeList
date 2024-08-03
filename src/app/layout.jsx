@@ -1,5 +1,6 @@
   import React from 'react';
   import Head from 'next/head';
+  import { Analytics } from "@vercel/analytics/react"
 
   const Layout = ({ children }) => {
     return (
