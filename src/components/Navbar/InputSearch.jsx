@@ -3,6 +3,7 @@
 import { MagnifyingGlass } from "@phosphor-icons/react/dist/ssr";
 import { useRouter } from "next/navigation";
 import { useRef } from "react";
+import Navbar from ".";
 
 // Komponen InputSearch
 const InputSearch = () => {
@@ -42,6 +43,7 @@ const InputSearch = () => {
         <MagnifyingGlass size={25} style={{ color: 'black' }} />
       </button>
     </div>
+    
   );
 };
 
